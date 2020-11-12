@@ -1,0 +1,20 @@
+{
+  "name": "weather-journal-app",
+  "version": "1.0.0",
+  "description": "Weather Journal FWD 2nd Project ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohamedMasry/weather-journal-fwd.git"
+  },
+  "author": "Mohamed Essam Ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MohamedMasry/weather-journal-fwd/issues"
+  },
+  "homepage": "https://github.com/MohamedMasry/weather-journal-fwd#readme"
+}

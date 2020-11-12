@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Journal</title>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <!-- icon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- style linking -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper-app">
+        <div id="app">
+            <div class="headline">
+                <h1 class="headline-h1"><a style="font-size: 3rem;">&#127781</a> Weather Journal App</h1>
+            </div>
+            <!-- Entries -->
+
+            <div class="holder zip">
+                <label for="zip">Enter Zipcode here &#128237</label>
+                <input type="text" id="zip" placeholder="enter zip code here" value="">
+            </div>
+            <br>
+            <div class="holder feel">
+                <label for="feelings">How are you feeling today? &#129303</label>
+                <textarea class="myInput" id="feelings" placeholder="Enter your feelings here" rows="10" cols="50"></textarea>
+
+            </div>
+            <div class="holder">
+                <!-- button -->
+                <button id="generate" type="submit"> Get Temp &#129327 </button>
+            </div>
+            <div class="entry">
+                <div class="title">
+                    Most Recent Entry
+                </div>
+                <div id="entryHolder">
+                    <label class="entry-content">&#128467 Date :  </label>
+                    <div id="date"></div>
+                    <label class="entry-content">&#127777 Temp :  </label>
+                    <div id="temp"></div>
+                    <label class="entry-content">&#10084 Feeling :  </label>
+                    <div id="content"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js" type="text/javascript"></script>
+
+</body>
+
+</html>
