@@ -1,19 +1,22 @@
 /* Global Variables */
 
-let baseURL = 'https://api.openweathermap.org/data/2.5/weather?zip=';
-let key = '&appid=90ab013ca1d9d873dc5eb117f441fa7f&units=metric';
+const baseURL = 'https://api.openweathermap.org/data/2.5/weather?zip=';
+const key = '&appid=90ab013ca1d9d873dc5eb117f441fa7f&units=metric';
 
 
 const entryVisble = document.querySelectorAll('#entryHolder');
 
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth() + '.' + d.getDate() + '.' + d.getFullYear();
+let newDate = d.getMonth() + 1 + '.' + d.getDate() + '.' + d.getFullYear();
 
 document.getElementById('generate').addEventListener('click', performAction);
 
 function performAction(e) {
     const postCode = document.getElementById('zip').value;
+    if (!postCode) {
+        alert("ايه يا جدع \n بعد اذنك Please Enter The zip code \n ومتعملش كده تاني");
+    };
     const content = document.getElementById('feelings').value;
     console.log(newDate);
     getTemperature(baseURL, postCode, key)
